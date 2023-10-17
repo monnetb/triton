@@ -164,7 +164,7 @@ namespace triton
     std::string llir_to_ptx(llvm::Module *module, int cc, int version)
     {
       // LLVM version in use may not officially support target hardware
-      int max_nvvm_cc = 90;
+      int max_nvvm_cc = 80;
       int max_nvvm_ptx = 80;
       // options
       auto options = llvm::cl::getRegisteredOptions();
